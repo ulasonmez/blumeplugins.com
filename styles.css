@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px; /* padding added */
+    margin: 0;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#video-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.video-container {
+    width: 500px;
+    height: auto; /* Changed height to auto */
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding-bottom: 20px; /* Added some padding at the bottom */
+}
+
+.video-container img {
+    width: 100%;
+    height: 70%; /* Set a fixed height for the image */
+    object-fit: cover;
+}
+
+.video-container h3 {
+    margin: 0;
+    margin-bottom: 10px; /* Added some margin at the bottom */
+    padding: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
