@@ -1,4 +1,4 @@
-fetch('files/AllPlugins.txt')
+fetch('files/All Plugins.txt')
     .then(response => response.text())
     .then(data => {
         var lines = data.split('\n').filter(line => line.trim() !== '').reverse(); // remove empty lines first, then reverse
