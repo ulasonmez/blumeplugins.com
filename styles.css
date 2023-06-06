@@ -4,58 +4,60 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
-    padding: 20px; /* padding added */
+    padding: 20px;
     margin: 0;
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
 }
 
-.site-title { /* New site title styling */
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
 #video-gallery {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center; /* align items to center */
+    justify-content: space-between;
     width: 100%;
 }
 
 .video-container {
-    width: 22%;
-    height: auto; /* Changed height to auto */
-    margin: 1%;
+    flex: 1 0 21%;
+    height: auto;
+    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding-bottom: 20px; /* Added some padding at the bottom */
-    display: flex; /* Added display flex */
-    flex-direction: column; /* Added flex direction */
-    align-items: center; /* Center the items */
-    justify-content: space-between; /* Distribute space evenly */
-    border: 3px solid black; /* Increased border thickness */
+    padding-bottom: 20px;
+    margin: 1%;
+    border: 2px solid black;
 }
 
 .video-container img {
     width: 100%;
-    height: 70%; /* Set a fixed height for the image */
+    height: 70%;
     object-fit: cover;
 }
 
 .video-container h3 {
     margin: 0;
-    margin-bottom: 10px; /* Added some margin at the bottom */
+    margin-bottom: 10px;
     padding: 10px;
     font-size: 26px;
     font-weight: bold;
     text-align: center;
 }
 
-/* Mobile devices (width under 600px) */
-@media only screen and (max-width: 600px) {
-    .video-container {
-        width: 98%;
-    }
+h1.site-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px; /* increased the margin to 20px */
 }
